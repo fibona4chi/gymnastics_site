@@ -1,0 +1,212 @@
+{% extends './base.html' %}
+
+{% load static %}
+
+
+{% block title %}Главная{% endblock %}
+
+{% block header %}
+    {% include './block/slider.html' %}
+{% endblock %}
+
+{% block content_workout %}
+<div class="container-fluid mt-0" style="background-color: #eceff1">
+    <div class="container">
+        <h1 class="my-0 pt-5 pb-4 text-center">Выбери тренировку</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-lg">
+                    <img src="{% static 'img/img_dwnld/polotna.jpg' %}" alt="" class="card-img-top">
+                    <div class="card-body" style="background-color: #b0bec5">
+                        <h4 class="card-title">Воздушные полотна</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
+                            nesciunt,
+                            recusandae. A corporis dolore doloremque eos error esse est expedita, id labore perspiciatis,
+                            quaerat quia quibusdam repudiandae, tenetur vero voluptas.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn my-btn btn-sm btn-outline-success">
+                                    Подробнее</a>
+                            </div>
+                            <small class="text-muted">30.03.2021</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-lg">
+                    <img src="{% static 'img/img_dwnld/kolco.jpg' %}" alt="" class="card-img-top">
+                    <div class="card-body" style="background-color: #b0bec5">
+                        <h4 class="card-title">Воздушное кольцо</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
+                            nesciunt,
+                            recusandae. A corporis dolore doloremque eos error esse est expedita, id labore perspiciatis,
+                            quaerat quia quibusdam repudiandae, tenetur vero voluptas.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn my-btn btn-sm btn-outline-success">Подробнее</a>
+                            </div>
+                            <small class="text-muted">30.03.2021</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-lg">
+                    <img src="{% static 'img/img_dwnld/rastyazhka.jpg' %}" alt="" class="card-img-top">
+                    <div class="card-body" style="background-color: #b0bec5">
+                        <h4 class="card-title">Растяжка</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
+                            nesciunt,
+                            recusandae. A corporis dolore doloremque eos error esse est expedita, id labore perspiciatis,
+                            quaerat quia quibusdam repudiandae, tenetur vero voluptas.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn my-btn btn-sm btn-outline-success">Подробнее</a>
+                            </div>
+                            <small class="text-muted">30.03.2021</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content_news %}
+<div class="container-fluid mt-0" style="background-color: #eceff1">
+    <div class="container">
+        <h1 class="my-0 pt-5 pb-4 text-center">Последние новости</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-lg">
+                    <img src="{% static 'img/img_dwnld/polotna.jpg' %}" alt="" class="card-img-top">
+                    <div class="card-body" style="background-color: #b0bec5">
+                        <h4 class="card-title">Воздушные полотна</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
+                            nesciunt,
+                            recusandae. A corporis dolore doloremque eos error esse est expedita, id labore perspiciatis,
+                            quaerat quia quibusdam repudiandae, tenetur vero voluptas.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-outline-success">Подробнее</a>
+                            </div>
+                            <small class="text-muted">30.03.2021</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-lg">
+                    <img src="{% static 'img/img_dwnld/kolco.jpg' %}" alt="" class="card-img-top">
+                    <div class="card-body" style="background-color: #b0bec5">
+                        <h4 class="card-title">Воздушное кольцо</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
+                            nesciunt,
+                            recusandae. A corporis dolore doloremque eos error esse est expedita, id labore perspiciatis,
+                            quaerat quia quibusdam repudiandae, tenetur vero voluptas.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-outline-success">Подробнее</a>
+                            </div>
+                            <small class="text-muted">30.03.2021</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-lg">
+                    <img src="{% static 'img/img_dwnld/rastyazhka.jpg' %}" alt="" class="card-img-top">
+                    <div class="card-body" style="background-color: #b0bec5">
+                        <h4 class="card-title">Растяжка</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
+                            nesciunt,
+                            recusandae. A corporis dolore doloremque eos error esse est expedita, id labore perspiciatis,
+                            quaerat quia quibusdam repudiandae, tenetur vero voluptas.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-outline-success">Подробнее</a>
+                            </div>
+                            <small class="text-muted">30.03.2021</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-lg">
+                    <img src="{% static 'img/img_dwnld/polotna.jpg' %}" alt="" class="card-img-top">
+                    <div class="card-body" style="background-color: #b0bec5">
+                        <h4 class="card-title">Воздушные полотна</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
+                            nesciunt,
+                            recusandae. A corporis dolore doloremque eos error esse est expedita, id labore perspiciatis,
+                            quaerat quia quibusdam repudiandae, tenetur vero voluptas.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-outline-success">Подробнее</a>
+                            </div>
+                            <small class="text-muted">30.03.2021</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-lg">
+                    <img src="{% static 'img/img_dwnld/kolco.jpg' %}" alt="" class="card-img-top">
+                    <div class="card-body" style="background-color: #b0bec5">
+                        <h4 class="card-title">Воздушное кольцо</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
+                            nesciunt,
+                            recusandae. A corporis dolore doloremque eos error esse est expedita, id labore perspiciatis,
+                            quaerat quia quibusdam repudiandae, tenetur vero voluptas.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-outline-success">Подробнее</a>
+                            </div>
+                            <small class="text-muted">30.03.2021</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-lg">
+                    <img src="{% static 'img/img_dwnld/rastyazhka.jpg' %}" alt="" class="card-img-top">
+                    <div class="card-body" style="background-color: #b0bec5">
+                        <h4 class="card-title">Растяжка</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi,
+                            nesciunt,
+                            recusandae. A corporis dolore doloremque eos error esse est expedita, id labore perspiciatis,
+                            quaerat quia quibusdam repudiandae, tenetur vero voluptas.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <a href="#" class="btn btn-sm btn-outline-success">Подробнее</a>
+                            </div>
+                            <small class="text-muted">30.03.2021</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block pagination %}
+<div class="container-fluid mt-0" style="background-color: #eceff1">
+    <nav aria-label="Paginate me">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1">Предыдущая</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Следующая</a>
+            </li>
+        </ul>
+    </nav>
+    <br>
+</div>
+{% endblock %}
