@@ -1,0 +1,51 @@
+{% extends './base.html' %}
+
+{% load static %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+
+{% block header %}
+    {% include './block/header.html' %}
+{% endblock %}
+
+
+{% block content_workout %}
+
+<div class="container-fluid mt-0" style="background-color: #eceff1">
+    <div class="container">
+        <div class="row">
+
+            <!--    ЭТО КОЛОНКА КОНТЕНТА ПОСТА -->
+
+            <div class="col-lg-8 mx-auto">
+
+                <!--    ЭТО ХЛЕБНЫЕ КРОШКИ -->
+
+                <nav aria-label="breadcrumb" class="mt-4">
+                    <ol class="breadcrumb" style="background-color: #cfd8dc">
+                        <li class="breadcrumb-item"><a href="{% url 'index' %}">Главная</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">{{ work.title }}</li>
+                    </ol>
+                </nav>
+
+                <!--    ЭТО ТЕЛО ПОСТА -->
+
+                <img class="img-fluid rounded " src="{{ work.image.url }}" alt="">
+                <hr>
+                <p class="lead">
+                    {{ work.description|safe }}
+                </p>
+                <p>
+                    {{ work.content|safe }}
+                </p>
+                <div class="btn-group">
+                    <a href="#" class="btn my-btn btn-sm btn-outline-success">Записаться сейчас!</a>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

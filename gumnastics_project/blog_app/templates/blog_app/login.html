@@ -1,0 +1,40 @@
+{% extends './base.html' %}
+
+{% load static %}
+
+{% block title %}Авторизация{% endblock %}
+
+
+{% block content_auth %}
+<div class="form-group">
+    <div class="text-center">
+        {% if form.errors %}
+            {% for filed in form %}
+                {% for error in filed.errors %}
+                    <div class="alert alert-danger">
+                        <strong>{{ error|escape }}</strong>
+                    </div>
+                {% endfor %}
+            {% endfor %}
+            {% for error in form.non_field_errors %}
+                <div class="alert alert-danger">
+                    <strong>{{ error|escape }}</strong>
+                </div>
+            {% endfor %}
+        {% endif %}
+        <form class="form-signin" method="post" action="{% url 'login' %}">
+            {% csrf_token %}
+            <h1 class="h3 mb-3 mt-3 font-weight-normal">Пожалуйста укажите логин и пароль</h1>
+            <div class="col-md-4 mb-3 mx-auto">
+                <label for="inputUsername">Имя пользователя</label>
+                {{ form.username }}
+            </div>
+            <div class="col-md-4 mb-3 mx-auto">
+                <label for="inputPassword">Пароль</label>
+                {{ form.password }}
+            </div>
+            <button class="btn btn-outline-success my-btn" type="submit">Войти</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
